@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ch2-hello-springmvc:war">
+    <output-path>$PROJECT_DIR$/ch2-hello-springmvc/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ch2-hello-springmvc</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ch2-hello-springmvc.war">
+      <element id="artifact" artifact-name="ch2-hello-springmvc:war exploded" />
+    </root>
+  </artifact>
+</component>
