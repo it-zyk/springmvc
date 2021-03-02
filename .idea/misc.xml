@@ -2,17 +2,20 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/ch01-hello-springmvc" />
-    <file type="web" url="file://$PROJECT_DIR$/ch2-hello-springmvc" />
+    <file type="web" url="file://$PROJECT_DIR$/ch02-hello-springmvc" />
+    <file type="web" url="file://$PROJECT_DIR$/ch03-pojo-springmvc" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/ch01-hello-springmvc/pom.xml" />
         <option value="$PROJECT_DIR$/ch2-hello-springmvc/pom.xml" />
+        <option value="$PROJECT_DIR$/ch02-hello-springmvc/pom.xml" />
+        <option value="$PROJECT_DIR$/ch03-pojo-springmvc/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="15" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
