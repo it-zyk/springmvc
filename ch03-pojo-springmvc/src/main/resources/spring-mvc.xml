@@ -15,6 +15,16 @@
     <context:component-scan base-package="com"></context:component-scan>
     <mvc:annotation-driven />
 
+
+    <!--注册类型转换器GoodsConverter-->
+    <bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
+        <property name="converters">
+            <list>
+                <bean class="com.supreme.converter.GoodsConverter"/>
+            </list>
+        </property>
+    </bean>
+
     <bean name="/login" class="com.supreme.controller.LoginController"/>
     <!-- LoginController控制器类，映射到"/register" -->
     <bean name="/register" class="com.supreme.controller.RegisterController"/>

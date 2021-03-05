@@ -15,4 +15,9 @@ public class IndexController {
     public String register(){
         return "register";
     }
+
+    @RequestMapping("/input")
+    public String input(){
+        return "input";
+    }
 }

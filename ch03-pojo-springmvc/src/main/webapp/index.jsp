@@ -15,6 +15,10 @@
 未注册的用户，请<a href="${pageContext.request.contextPath }/register"> 注册</a>！
 <br/>
 已注册的用户，去<a href="${pageContext.request.contextPath }/login"> 登录</a>！
-</body>
+<br/>
+商品录入<a href="${pageContext.request.contextPath }/index/input"> 录入</a>！
+<br/>
+ 增加商品<a href="${pageContext.request.contextPath }/addGoods"> 增加商品</a>！
+
 </body>
 </html>
