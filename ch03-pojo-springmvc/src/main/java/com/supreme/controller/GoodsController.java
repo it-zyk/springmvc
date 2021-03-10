@@ -18,4 +18,8 @@ public class GoodsController {
         System.out.println(a );
         return "main";
     }
+    @RequestMapping("/input")
+    public String inPut(){
+        return "input";
+    }
 }
