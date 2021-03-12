@@ -20,4 +20,9 @@ public class IndexController {
     public String input(){
         return "input";
     }
+
+    @RequestMapping("/inputb")
+    public String inputb(){
+        return "inputb";
+    }
 }

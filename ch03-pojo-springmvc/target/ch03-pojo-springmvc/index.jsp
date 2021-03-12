@@ -16,9 +16,9 @@
 <br/>
 已注册的用户，去<a href="${pageContext.request.contextPath }/login"> 登录</a>！
 <br/>
-商品录入<a href="${pageContext.request.contextPath }/index/input"> 录入</a>！
+商品录入(converter)<a href="${pageContext.request.contextPath }/index/input"> 录入</a>！
 <br/>
- 增加商品<a href="${pageContext.request.contextPath }/addGoods"> 增加商品</a>！
+商品录入(formatter)<a href="${pageContext.request.contextPath }/index/inputb"> 录入</a>！
 
 </body>
 </html>
