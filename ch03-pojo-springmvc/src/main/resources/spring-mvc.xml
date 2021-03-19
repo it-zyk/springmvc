@@ -48,6 +48,27 @@
     <mvc:resources location="/images/" mapping="/images/**" />
 
     <mvc:resources location="/js/" mapping="/js/**" />
+
+
+
+    <!-- 配置拦截器 -->
+    <mvc:interceptors>
+        <!-- 配置一个全局拦截器，拦截所有请求 -->
+        <!--<bean class="interceptor.TestInterceptor" />-->
+        <mvc:interceptor>
+            <!-- 配置拦截器作用的路径 -->
+            <mvc:mapping path="/**"/>
+            <!--定义在<mvc:interceptor>元素中，表示匹配指定路径的请求才进行拦截-->
+            <bean class="com.interceptor.Interceptor1"/>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <!-- 配置拦截器作用的路径 -->
+            <mvc:mapping path="/gotoTest"/>
+            <!--定义在<mvc:interceptor>元素中，表示匹配指定路径的请求才进行拦截-->
+            <bean class="com.interceptor.Interceptor2"/>
+        </mvc:interceptor>
+         
+    </mvc:interceptors>
     <!-- 完成视图的对应 -->
     <!-- 对转向页面的路径解析。prefix：前缀， suffix：后缀 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
