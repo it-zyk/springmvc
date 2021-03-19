@@ -47,6 +47,7 @@
     <!-- 允许css目录下的所有文件可见 -->
     <mvc:resources location="/images/" mapping="/images/**" />
 
+    <mvc:resources location="/js/" mapping="/js/**" />
     <!-- 完成视图的对应 -->
     <!-- 对转向页面的路径解析。prefix：前缀， suffix：后缀 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">

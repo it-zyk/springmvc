@@ -16,6 +16,11 @@ public class IndexController {
         return "register";
     }
 
+    @RequestMapping("/json")
+    public String indexjson(){
+        return "json";
+    }
+
     @RequestMapping("/input")
     public String input(){
         return "input";

@@ -19,6 +19,7 @@
 商品录入(converter)<a href="${pageContext.request.contextPath }/index/input"> 录入</a>！
 <br/>
 商品录入(formatter)<a href="${pageContext.request.contextPath }/index/inputb"> 录入</a>！
-
+<br/>
+JSON 数据转换(json)<a href="${pageContext.request.contextPath }/json"> JSON</a>！
 </body>
 </html>
