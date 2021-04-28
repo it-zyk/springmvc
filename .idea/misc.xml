@@ -4,6 +4,7 @@
     <file type="web" url="file://$PROJECT_DIR$/ch01-hello-springmvc" />
     <file type="web" url="file://$PROJECT_DIR$/ch02-hello-springmvc" />
     <file type="web" url="file://$PROJECT_DIR$/ch03-pojo-springmvc" />
+    <file type="web" url="file://$PROJECT_DIR$/ch05-local-springmvc" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -12,6 +13,7 @@
         <option value="$PROJECT_DIR$/ch2-hello-springmvc/pom.xml" />
         <option value="$PROJECT_DIR$/ch02-hello-springmvc/pom.xml" />
         <option value="$PROJECT_DIR$/ch03-pojo-springmvc/pom.xml" />
+        <option value="$PROJECT_DIR$/ch05-local-springmvc/pom.xml" />
       </list>
     </option>
   </component>
