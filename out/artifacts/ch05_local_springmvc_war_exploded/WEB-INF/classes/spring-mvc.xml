@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <context:component-scan base-package="com.supreme.controller"></context:component-scan>
+
+
+    <bean name="/login" class="com.supreme.controller.LoginController"/>
+    <!-- LoginController控制器类，映射到"/register" -->
+    <bean name="/register" class="com.supreme.controller.RegisterController"/>
+
+
+
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+
+        <!-- 配置逻辑视图的前缀 -->
+        <property name="prefix" value="/WEB-INF/jsp/" />
+        <!-- 配置逻辑视图的后缀 -->
+        <property name="suffix" value=".jsp" />
+
+    </bean>
+
+    <!-- 国际化操作拦截器，如果采用基于Session/Cookie则必须配置 -->
+    <mvc:interceptors>
+        <bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor" />
+    </mvc:interceptors>
+    <!-- 存储区域设置信息 -->
+    <bean id="localeResolver"
+          class="org.springframework.web.servlet.i18n.SessionLocaleResolver">
+        <property name="defaultLocale" value="zh_CN"></property>
+    </bean>
+    <!-- 加载国际化资源文件 -->
+    <bean id="messageSource"
+          class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <!-- <property name="basename" value="classpath:messages" /> -->
+        <property name="basename" value="/WEB-INF/classes/messages" />
+    </bean>
+
+</beans>
