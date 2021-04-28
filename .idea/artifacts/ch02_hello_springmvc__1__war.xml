@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="war" name="ch02-hello-springmvc (1):war">
-    <output-path>$PROJECT_DIR$/ch05-local-springmvc/target</output-path>
+    <output-path>$PROJECT_DIR$/ch04-login-springmvc/target</output-path>
     <properties id="maven-jee-properties">
       <options>
         <module>ch02-hello-springmvc (1)</module>

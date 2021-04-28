@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/ch01-hello-springmvc/ch01-hello-springmvc.iml" filepath="$PROJECT_DIR$/ch01-hello-springmvc/ch01-hello-springmvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch02-hello-springmvc/ch02-hello-springmvc.iml" filepath="$PROJECT_DIR$/ch02-hello-springmvc/ch02-hello-springmvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch03-pojo-springmvc/ch03-pojo-springmvc.iml" filepath="$PROJECT_DIR$/ch03-pojo-springmvc/ch03-pojo-springmvc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch04-login-springmvc/ch04-login-springmvc.iml" filepath="$PROJECT_DIR$/ch04-login-springmvc/ch04-login-springmvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch05-local-springmvc/ch05-local-springmvc.iml" filepath="$PROJECT_DIR$/ch05-local-springmvc/ch05-local-springmvc.iml" />
     </modules>
   </component>
