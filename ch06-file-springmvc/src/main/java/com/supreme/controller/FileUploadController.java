@@ -72,14 +72,7 @@ public class FileUploadController {
         return "showMulti";
     }
 
-    @RequestMapping("/oneFile")
-    public String oneFile(){
-        return "oneFile";
-    }
 
-    @RequestMapping("/multiFiles")
-    public String multiFiles(){
-        return "multiFiles";
-    }
+
 }
 
