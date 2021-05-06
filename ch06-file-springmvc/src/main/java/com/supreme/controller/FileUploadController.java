@@ -56,7 +56,7 @@ public class FileUploadController {
         if (!targetDir.exists()) {
             targetDir.mkdirs();
         }
-        List<MultipartFile> files = multiFileDomain.getMyFile();
+        List<MultipartFile> files = multiFileDomain.getMyfile();
         for (int i = 0; i < files.size(); i++) {
             MultipartFile file = files.get(i);
             String fileName = file.getOriginalFilename();
