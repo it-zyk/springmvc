@@ -1,6 +1,13 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="ch04-login-springmvc:war exploded">
-    <output-path>$PROJECT_DIR$/out/artifacts/ch04_login_springmvc_war_exploded</output-path>
+    <output-path>$PROJECT_DIR$/ch04-login-springmvc/target/ch04-login-springmvc</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>ch04-login-springmvc</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -16,6 +23,9 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-web:5.2.0.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.2.0.RELEASE" />
         </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/ch04-login-springmvc/target/ch04-login-springmvc/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="ch04-login-springmvc/web/Web" />
     </root>
