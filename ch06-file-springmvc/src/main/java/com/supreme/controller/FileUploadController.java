@@ -1,6 +1,7 @@
 package com.supreme.controller;
 
 import com.pojo.FileDomain;
+import com.pojo.MultiFileDomain;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Controller;
@@ -13,6 +14,7 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 import java.util.UUID;
 
 @Controller
@@ -47,9 +49,37 @@ public class FileUploadController {
         return "showOne";
     }
 
+    @RequestMapping("/multifile")
+    public String multiFileUpload(@ModelAttribute MultiFileDomain multiFileDomain, HttpServletRequest request) {
+        String realpath = request.getServletContext().getRealPath("uploadfiles");
+        File targetDir = new File(realpath);
+        if (!targetDir.exists()) {
+            targetDir.mkdirs();
+        }
+        List<MultipartFile> files = multiFileDomain.getMyFile();
+        for (int i = 0; i < files.size(); i++) {
+            MultipartFile file = files.get(i);
+            String fileName = file.getOriginalFilename();
+            File targetFile = new File(realpath, fileName);
+            // 上传
+            try {
+                file.transferTo(targetFile);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        logger.info("成功");
+        return "showMulti";
+    }
+
     @RequestMapping("/oneFile")
     public String oneFile(){
         return "oneFile";
+    }
+
+    @RequestMapping("/multiFiles")
+    public String multiFiles(){
+        return "multiFiles";
     }
 }
 
