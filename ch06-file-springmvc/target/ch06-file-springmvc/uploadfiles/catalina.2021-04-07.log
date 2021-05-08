@@ -1,0 +1,74 @@
+四月 07, 2021 5:26:56 下午 org.apache.catalina.core.AprLifecycleListener init
+信息: Loaded APR based Apache Tomcat Native library 1.2.10 using APR version 1.5.2.
+四月 07, 2021 5:26:56 下午 org.apache.catalina.core.AprLifecycleListener init
+信息: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+四月 07, 2021 5:26:57 下午 org.apache.catalina.core.AprLifecycleListener initializeSSL
+信息: OpenSSL successfully initialized with version OpenSSL 1.0.2j  26 Sep 2016
+四月 07, 2021 5:26:58 下午 org.apache.coyote.http11.Http11AprProtocol init
+信息: Initializing Coyote HTTP/1.1 on http-8080
+四月 07, 2021 5:26:58 下午 org.apache.coyote.ajp.AjpAprProtocol init
+信息: Initializing Coyote AJP/1.3 on ajp-8009
+四月 07, 2021 5:26:58 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 2337 ms
+四月 07, 2021 5:26:58 下午 org.apache.catalina.core.StandardService start
+信息: Starting service Catalina
+四月 07, 2021 5:26:58 下午 org.apache.catalina.core.StandardEngine start
+信息: Starting Servlet Engine: Apache Tomcat/6.0.48
+四月 07, 2021 5:26:58 下午 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor host-manager.xml
+四月 07, 2021 5:26:58 下午 org.apache.catalina.startup.HostConfig deployDescriptor
+信息: Deploying configuration descriptor manager.xml
+四月 07, 2021 5:26:58 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive iPdfLic.war
+四月 07, 2021 5:26:59 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive iSignatureHTML5.war
+四月 07, 2021 5:27:01 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive iSignatureWebPDF.war
+四月 07, 2021 5:27:19 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory docs
+四月 07, 2021 5:27:20 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory examples
+四月 07, 2021 5:27:20 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory ROOT
+四月 07, 2021 5:27:20 下午 org.apache.coyote.http11.Http11AprProtocol start
+信息: Starting Coyote HTTP/1.1 on http-8080
+四月 07, 2021 5:27:20 下午 org.apache.coyote.ajp.AjpAprProtocol start
+信息: Starting Coyote AJP/1.3 on ajp-8009
+四月 07, 2021 5:27:20 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 22477 ms
+四月 07, 2021 5:27:20 下午 org.apache.cxf.transport.servlet.CXFNonSpringServlet loadBusNoConfig
+信息: Load the bus without application context
+四月 07, 2021 5:27:21 下午 org.apache.cxf.transport.servlet.AbstractCXFServlet replaceDestinationFactory
+信息: Replaced the http destination factory with servlet transport factory
+四月 07, 2021 5:27:22 下午 org.apache.cxf.endpoint.ServerImpl initDestination
+信息: Setting the server's publish address to be /PdfActionService
+四月 07, 2021 5:27:22 下午 org.apache.cxf.endpoint.ServerImpl initDestination
+信息: Setting the server's publish address to be /PdfInfoService
+四月 07, 2021 5:27:22 下午 org.apache.cxf.endpoint.ServerImpl initDestination
+信息: Setting the server's publish address to be /PdfHummerService
+四月 07, 2021 5:27:22 下午 org.apache.cxf.endpoint.ServerImpl initDestination
+信息: Setting the server's publish address to be /PdfSigByKeyService
+四月 07, 2021 5:27:23 下午 org.apache.cxf.endpoint.ServerImpl initDestination
+信息: Setting the server's publish address to be /PdfSigVerifySM2Service
+四月 07, 2021 5:28:04 下午 org.apache.cxf.phase.PhaseInterceptorChain doDefaultLogging
+信息: Application {http://ws.kinggrid.com}PdfHummerService#{http://ws.kinggrid.com}exec has thrown exception, unwinding now: com.jfinal.core.exception.FwRuntimeException: java.lang.RuntimeException: java.net.SocketTimeoutException: Read timed out
+四月 07, 2021 5:28:30 下午 org.apache.cxf.phase.PhaseInterceptorChain doDefaultLogging
+信息: Application {http://ws.kinggrid.com}PdfHummerService#{http://ws.kinggrid.com}exec has thrown exception, unwinding now: com.jfinal.core.exception.FwRuntimeException: java.lang.RuntimeException: java.net.SocketTimeoutException: Read timed out
+四月 07, 2021 5:28:41 下午 org.apache.cxf.phase.PhaseInterceptorChain doDefaultLogging
+信息: Application {http://ws.kinggrid.com}PdfHummerService#{http://ws.kinggrid.com}exec has thrown exception, unwinding now: com.jfinal.core.exception.FwRuntimeException: java.lang.RuntimeException: java.net.SocketTimeoutException: Read timed out
+四月 07, 2021 5:28:52 下午 org.apache.cxf.phase.PhaseInterceptorChain doDefaultLogging
+信息: Application {http://ws.kinggrid.com}PdfHummerService#{http://ws.kinggrid.com}exec has thrown exception, unwinding now: com.jfinal.core.exception.FwRuntimeException: java.lang.RuntimeException: java.net.SocketTimeoutException: Read timed out
+四月 07, 2021 5:29:08 下午 org.apache.cxf.phase.PhaseInterceptorChain doDefaultLogging
+信息: Application {http://ws.kinggrid.com}PdfHummerService#{http://ws.kinggrid.com}exec has thrown exception, unwinding now: com.jfinal.core.exception.FwRuntimeException: java.lang.RuntimeException: java.net.SocketTimeoutException: Read timed out
+四月 07, 2021 5:29:20 下午 org.apache.cxf.phase.PhaseInterceptorChain doDefaultLogging
+信息: Application {http://ws.kinggrid.com}PdfHummerService#{http://ws.kinggrid.com}exec has thrown exception, unwinding now: com.jfinal.core.exception.FwRuntimeException: java.lang.RuntimeException: java.net.SocketTimeoutException: Read timed out
+四月 07, 2021 5:29:30 下午 org.apache.cxf.phase.PhaseInterceptorChain doDefaultLogging
+信息: Application {http://ws.kinggrid.com}PdfHummerService#{http://ws.kinggrid.com}exec has thrown exception, unwinding now: com.jfinal.core.exception.FwRuntimeException: java.lang.RuntimeException: java.net.SocketTimeoutException: Read timed out
+四月 07, 2021 5:29:46 下午 org.apache.cxf.phase.PhaseInterceptorChain doDefaultLogging
+信息: Application {http://ws.kinggrid.com}PdfHummerService#{http://ws.kinggrid.com}exec has thrown exception, unwinding now: com.jfinal.core.exception.FwRuntimeException: java.lang.RuntimeException: java.net.SocketTimeoutException: Read timed out
+四月 07, 2021 5:29:57 下午 org.apache.cxf.phase.PhaseInterceptorChain doDefaultLogging
+信息: Application {http://ws.kinggrid.com}PdfHummerService#{http://ws.kinggrid.com}exec has thrown exception, unwinding now: com.jfinal.core.exception.FwRuntimeException: java.lang.RuntimeException: java.net.SocketTimeoutException: Read timed out
+四月 07, 2021 5:30:08 下午 org.apache.cxf.phase.PhaseInterceptorChain doDefaultLogging
+信息: Application {http://ws.kinggrid.com}PdfHummerService#{http://ws.kinggrid.com}exec has thrown exception, unwinding now: com.jfinal.core.exception.FwRuntimeException: java.lang.RuntimeException: java.net.SocketTimeoutException: Read timed out
+四月 07, 2021 5:30:19 下午 org.apache.cxf.phase.PhaseInterceptorChain doDefaultLogging
+信息: Application {http://ws.kinggrid.com}PdfHummerService#{http://ws.kinggrid.com}exec has thrown exception, unwinding now: com.jfinal.core.exception.FwRuntimeException: java.lang.RuntimeException: java.net.SocketTimeoutException: Read timed out

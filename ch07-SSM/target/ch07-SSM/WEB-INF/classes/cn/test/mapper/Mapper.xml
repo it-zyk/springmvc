@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.test.mapper.UserMapper">
+    <select id="userLogin" resultType="Integer" parameterType="user">
+        SELECT COUNT(1) FROM user WHERE userName = #{userName} and userPassword = #{userPassword}
+    </select>
+</mapper>
