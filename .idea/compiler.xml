@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ch06-file-springmvc" />
+        <module name="ch08-SSM" />
         <module name="ch03-pojo-springmvc" />
         <module name="ch02-hello-springmvc" />
         <module name="ch04-login-springmvc" />
@@ -24,6 +25,7 @@
       <module name="ch05-local-springmvc" target="1.8" />
       <module name="ch06-file-springmvc" target="1.8" />
       <module name="ch07-SSM" target="1.8" />
+      <module name="ch08-SSM" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

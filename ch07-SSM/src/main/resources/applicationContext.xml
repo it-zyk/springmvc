@@ -37,6 +37,8 @@
                   value="classpath:mybatis.xml"/>
         <property name="mapperLocations" value="classpath:cn/test/mapper/*Mapper.xml"/>
     </bean>
+
+
     <!-- 配置扫描包 加载mapper代理对象 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <!-- 扫描mapper路径 -->
